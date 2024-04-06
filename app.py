@@ -71,8 +71,6 @@ def compare_faces_handler():
         logging.info("Request received at /compare-faces endpoint")
 
         # Log the request data
-        logging.info("Request data:")
-        logging.info(request.json)
 
         # Parse base64 strings from request
         base64_image1 = request.json["image1"]
